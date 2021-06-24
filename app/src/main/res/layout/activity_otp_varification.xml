@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/otp"
+    tools:context=".OtpVarification">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ENTER YOUR OTP HERE"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000"
+            android:layout_marginTop="450dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/aclonica"/>
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/borderblaci1"
+        android:textAlignment="center"
+        android:textColorHint="#000"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextNumber"
+        android:backgroundTint="@color/black"
+        android:layout_margin="10dp"
+        android:text="verify" />
+
+    </RelativeLayout>
+</ScrollView>

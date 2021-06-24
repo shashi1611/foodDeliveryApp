@@ -1,6 +1,7 @@
-package com.restaurant.fooddeliveryapp;
+package com.restaurant.fooddeliveryapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.restaurant.fooddeliveryapp.R;
+import com.restaurant.fooddeliveryapp.allItemList;
+import com.restaurant.fooddeliveryapp.models.modelMenu;
 
 import java.util.List;
 
@@ -36,6 +40,16 @@ public class adapterMenu extends RecyclerView.Adapter<adapterMenu.MyViewHolder> 
         holder.text2.setText(list.get(position).getDish());
 //        holder.text2.setText(list.get(position).getLoc());
         Glide.with(holder.img.getContext()).load(list.get(position).getPic()).into(holder.img);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context, allItemList.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("name",list.get(position).getDish());
+//                intent.putExtra("name",list.get(position).getDish());
+                context.startActivity(intent);
+            }
+        });
 
     }
 

@@ -3,6 +3,10 @@
     <item android:id="@+id/menu_home"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="home"/>
+
+    <item android:id="@+id/menu_cart"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        android:title="Your cart"/>
 <!--    <item android:id="@+id/menu_price"-->
 <!--        android:icon="@drawable/ic_baseline_menu_24"-->
 <!--        android:title="@string/price"/>-->
@@ -15,8 +19,8 @@
     <item android:id="@+id/menu_contact"
         android:icon="@drawable/ic_baseline_contact_phone_24"
         android:title="contact us"/>
-<!--    <item android:id="@+id/menu_logout"-->
-<!--        android:icon="@drawable/ic_on_off_button"-->
-<!--        android:title="log out"/>-->
+    <item android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_on_off_button"
+        android:title="log out"/>
 
 </menu>

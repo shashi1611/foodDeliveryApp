@@ -1,4 +1,4 @@
-package com.restaurant.fooddeliveryapp;
+package com.restaurant.fooddeliveryapp.models;
 
 public class modelMenu {
     String pic;

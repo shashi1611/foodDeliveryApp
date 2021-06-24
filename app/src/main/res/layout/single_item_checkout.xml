@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    android:background="@drawable/customemenu"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/customemenu"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="170dp"
+            android:src="@drawable/bg1"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageItemCheckout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parentout"
+            android:layout_toRightOf="@+id/imageItemCheckout"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="item name"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="item name"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#000"
+                    android:id="@+id/nameItemCheckout"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="item count"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="item count"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_weight="1.3"
+                    android:textColor="#E41111"
+                    android:id="@+id/countItemCheckout"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="total price"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="#D60E0E" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="item count"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textAlignment="viewEnd"
+                    android:layout_weight="1.3"
+                    android:textColor="#D10707"
+                    android:id="@+id/totalPriceItemCheckout"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="R.s"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#232222"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="delete item"
+                    android:textSize="20sp"
+                    android:textAlignment="viewStart"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#D60E0E" />
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border"
+                    android:id="@+id/deleteButton"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/parentout"
+                    android:src="@drawable/ic_baseline_delete_24"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

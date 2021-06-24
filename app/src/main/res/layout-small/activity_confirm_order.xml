@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customemenu"
+    tools:context=".confirmOrder">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/confirmOrder">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/toolbarCustomBiryani"
+            android:background="@drawable/customtoolbar"
+            app:title="choose your address"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" enter full name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"
+        android:textColorHint="#000"
+        android:textAlignment="center"
+        android:layout_below="@+id/confirmOrder"
+        android:background="@drawable/border"
+        android:id="@+id/fullNameConfirmOrder"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint=" enter mobile number"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textColorHint="#000"
+        android:layout_below="@id/fullNameConfirmOrder"
+        android:background="@drawable/border"
+        android:id="@+id/mobileNoConfirmOrder"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:hint="  enter street , colony"
+        android:visibility="visible"
+        android:textColorHint="#000"
+        android:layout_below="@id/mobileNoConfirmOrder"
+        android:background="@drawable/border"
+        android:id="@+id/streetConfirmOrder"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:hint=" enter landmark eg near ghadi chowk"
+        android:textColorHint="#000"
+        android:layout_below="@id/streetConfirmOrder"
+        android:background="@drawable/border"
+        android:id="@+id/landmarkConfirmOrder"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/placeOrderConfirmOrder"
+        android:visibility="visible"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/landmarkConfirmOrder"
+        android:text="place order"
+        android:background="@drawable/customutton2"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

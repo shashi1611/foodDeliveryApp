@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardViewCaculate"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/customemenu"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/popularImage"
+            android:src="@drawable/bg1" />
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:scaleType="center"-->
+<!--            android:id="@+id/popularImage"-->
+<!--            android:src="@drawable/bg1"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="name"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/popularName"/>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+<!--        &lt;!&ndash;            android:orientation="horizontal">&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="description"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textStyle="bold"-->
+<!--            android:id="@+id/productDescription"/>-->
+
+        <!--            <Button-->
+        <!--                android:layout_width="3dp"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="#000"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:text="add"-->
+        <!--                android:textSize="50dp" />-->
+<!--        &lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="price"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#DF1414"-->
+<!--            android:textStyle="bold"-->
+<!--            android:id="@+id/productPrice"/>-->
+    </LinearLayout>
+
+</LinearLayout>

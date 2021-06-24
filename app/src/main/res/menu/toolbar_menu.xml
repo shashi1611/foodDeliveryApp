@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Biryani"
+        android:id="@+id/biryani"/>
+    <item android:title="Stater"
+        android:id="@+id/stater"/>
+    <item android:title="Soup"
+        android:id="@+id/soup"/>
+    <item android:title="Chinese"
+        android:id="@+id/chinese"/>
+    <item android:title="Beverages"
+        android:id="@+id/beverages"/>
+    <item android:title="Ice cream"
+        android:id="@+id/icecream"/>
+    <item android:title="cart"
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardViewCaculate"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="center"
+            android:src="@drawable/bg1" />
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:layout_below="@+id/productImage"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:id="@+id/productName"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="64dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/customtoolbar"-->
+<!--                android:text="add"-->
+<!--                -->
+<!--                android:textSize="20sp" />-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:layout_below="@+id/productName"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:id="@+id/productDescription"/>
+
+<!--            <Button-->
+<!--                android:layout_width="3dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#000"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="add"-->
+<!--                android:textSize="50dp" />-->
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/horp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productDescription"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="price"
+                android:textColor="#DF1414"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Rupees"
+                android:layout_marginLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="#DF0C0C"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:layout_below="@+id/horp"
+            android:id="@+id/addcartbutton"
+            android:text="add to cart"
+            android:paddingLeft="20dp"
+            android:layout_margin="5dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/custombutton"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

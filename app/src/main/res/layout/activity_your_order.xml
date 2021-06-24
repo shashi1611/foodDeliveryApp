@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/customemenu"
+    android:layout_height="match_parent"
+    tools:context=".yourOrder">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/stickCheckout">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/toolbarCustomCheckout"
+            android:background="@drawable/customtoolbar"
+            app:title="Your Orders"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stickCheckout"
+        android:id="@+id/recyclerViewYourOrder"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="your order list is empty "
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#7A3232"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/borderblack"
+        android:layout_below="@+id/stickCheckout"
+        android:visibility="invisible"
+        android:id="@+id/yourOrderList"/>
+
+</RelativeLayout>
